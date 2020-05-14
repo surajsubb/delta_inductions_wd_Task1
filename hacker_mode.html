@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <link rel="stylesheet" href="hacker_mode.css"> 
+		 <script type="text/javascript" src='hacker_mode.js'> </script>
+	</head>
+	<body>
+	<audio id="error" src = "wrong.mp3" preload = "auto"></audio>
+	<div class = "tab">
+		<button class="tablinks" onclick="modes(event, 'easy_mode');print_grid('e',9);">Easy</button>
+		<button class="tablinks" onclick="modes(event, 'normal_mode');print_grid('n',20);">Normal</button>
+		<p id="firstclick"> Click one of the modes to begin! Changing modes when in a game will reset the grid. </p>
+	</div>
+	<div class = "modes">
+		<div  id="easy_mode"  class = "tabcontent">
+			<p class ="spacer1">Click the boxes in ascending order as fast as possible </p>
+		<div>
+			<p style="float: left;" id="timere">Timer: 0</p>
+			<input style = "float: left;" id="new_gamee" type="submit" onClick="print_grid('e',9);">
+			<p style="float: left;" id = "scoree">Score: 0</p>
+		</div>
+		<div>
+		<div class="e_grid">
+			<input id="1e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="2e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="3e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="4e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="5e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="6e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="7e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="8e" type="submit" onClick="reply_click(this.id,'e')" >
+			<input id="9e" type="submit" onClick="reply_click(this.id,'e')" >
+		</div>
+		<div class="scoreboard">
+			<table>
+				<tr>
+					<th scope='col'>Scoreboard (sec)</th>
+				</tr>
+				<tr>
+					<td id="0etime"></td>
+				</tr>
+				<tr>
+					<td id="1etime"></td>
+				</tr>
+				<tr>
+					<td id="2etime"></td>
+				</tr>
+				<tr>
+					<td id="3etime"></td>
+				</tr>
+				<tr>
+					<td id="4etime"></td>
+				</tr>
+				<tr>
+					<td class = "reset"><input class="reset_Scoreboard" type="submit" value = "Reset Scoreboard" onClick="set_to_zero('e',1)"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		</div>
+	<div id="normal_mode" class = "tabcontent">
+		<p class ="spacer1">Click the boxes in ascending order as fast as possible </p>
+		<div>
+			<p style="float: left;" id="timern">Timer: 0</p>
+			<input style = "float: left;" id="new_gamen" type="submit" onClick="print_grid('n',20);">
+			<p style="float: left;" id = "scoren">Score: 0</p>
+		</div>
+		<div>
+		<div class="n_grid">
+			<input id="1n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="2n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="3n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="4n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="5n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="6n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="7n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="8n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="9n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="10n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="11n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="12n" type="submit" onClick="reply_click(this.id,'n')" >	
+			<input id="13n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="14n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="15n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="16n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="17n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="18n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="19n" type="submit" onClick="reply_click(this.id,'n')" >
+			<input id="20n" type="submit" onClick="reply_click(this.id,'n')" >
+		</div>
+		<div class="scoreboard">
+			<table>
+				<tr>
+					<th scope='col'>Scoreboard (sec)</th>
+				</tr>
+				<tr>
+					<td id="0ntime"></td>
+				</tr>
+				<tr>
+					<td id="1ntime"></td>
+				</tr>
+				<tr>
+					<td id="2ntime"></td>
+				</tr>
+				<tr>
+					<td id="3ntime"></td>
+				</tr>
+				<tr>
+					<td id="4ntime"></td>
+				</tr>
+				<tr>
+					<td class = "reset"><input class="reset_Scoreboard" type="submit" value = "Reset Scoreboard" onClick="set_to_zero('n',1);"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		</div>
+	</div>
+	</body>
+</html>

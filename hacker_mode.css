@@ -1,0 +1,203 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: green;
+}
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*{
+  box-sizing: border-box;
+}
+input {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background-color: black;
+  hover[type="submit"]: grey;
+  font-size: 60px;
+  color: green;
+}
+.e_grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	padding: 15px;
+	border: 3px solid black; 
+	border-radius: 10px;
+	margin: left auto;
+	margin-top: 50px;
+	margin-right: 50px;
+	margin-left: 95px;
+	width: 300px;
+	min-width:350px;
+	min-height:350px;
+	float: left;
+}
+.n_grid{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+	padding: 15px;
+	border: 3px solid black; 
+	border-radius: 10px;
+	margin:-left auto;
+	margin-top: 10px;
+	margin-right: 50px;
+	margin-left: 10px;
+	width: 560px;
+	min-width:560px;
+	min-height:445px;
+	float: left;
+
+}
+p {
+	font-size: 50px;
+}
+.spacer1{
+	padding: 50px;
+	font-size: 40px;
+	text-align: center;
+	margin: auto;
+	border: 4px dotted black;
+}
+#timern{
+	padding: 10px;
+	margin: 10px;
+	min-width: 300px;
+	border: 3px solid black; 
+	border-radius: 10px;
+}
+#scoren{
+	padding: 10px;
+	margin: 10px;
+	min-width: 300px;
+	border: 3px solid black; 
+	border-radius: 10px;
+}
+#new_gamen{
+	height: 60px;
+	width: 270px;
+	font-size: 30px;
+	position: center;
+	margin: 10px;
+	padding: 20px;
+	min-height: 80px;
+	display: inline;
+}
+body{
+	
+}
+.reset{
+	display: inline;
+	border: 0px;
+	margin: 0px;
+}
+.reset_Scoreboard{
+	height: 50px;
+	width: 290px;
+	max-width: 290px;
+	max-height: 50px;
+	border-radius: 10px;
+	border: 1px solid #c4c4c4;
+	background-color: black;
+	font-size: 30px;
+	color: green;
+	float: center;
+	margin:5px;
+}
+table{
+	font-size: 30px;
+	border: 3px solid black;
+	border-radius: 10px;
+	text-align: center;
+	float: left;
+	margin-top: 10px;
+	width: 300px;
+	height: 450px;
+	max-width: 290px;
+}
+td{
+	font-size: 30px;
+	text-align: center;
+	border: 3px solid black;
+	border-radius: 10px;
+	width: 290px;
+	height: 50px;
+	max-width: 290px;
+	max-height: 50px;
+	padding: 10px;
+	margin: 6px;
+}
+th{
+	border-bottom: 3px dotted black;
+	padding: 5px;
+}
+#normal_mode{
+	float: left;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+#easy_mode{
+	float: left;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+.tabcontent{
+	display: none;
+}
+.tablinks{
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	border: 1px solid #c4c4c4;
+	background-color: black;
+	font-size: 20px;
+	color: green;
+	margin: 5px;
+}
+#new_gamee{
+	height: 60px;
+	width: 270px;
+	font-size: 30px;
+	position: center;
+	margin: 10px;
+	padding: 20px;
+	min-height: 80px;
+	display: inline;	
+	
+}
+#timere{
+	padding: 10px;
+	margin: 10px;
+	min-width: 300px;
+	border: 3px solid black; 
+	border-radius: 10px;
+}
+#scoree{
+	padding: 10px;
+	margin: 10px;
+	min-width: 300px;
+	border: 3px solid black; 
+	border-radius: 10px;
+}
+input:hover[type="submit"]{
+	background: rgb(50,50,50);
+}
+button:hover{
+	background: rgb(50,50,50);
+}
+#firstclick{
+	font-size: 30px;
+}
